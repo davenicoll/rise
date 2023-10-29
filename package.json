@@ -81,7 +81,16 @@
       },
       "show_featured_posts": {
         "type": "boolean",
+        "default": true
+      },      
+      "show_search_nav": {
+        "type": "boolean",
         "default": true,
+        "group": "homepage"
+      },
+      "show_powered_by_ghost": {
+        "type": "boolean",
+        "default": false,
         "group": "homepage"
       },
       "featured_title": {
