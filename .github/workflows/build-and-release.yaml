@@ -1,0 +1,48 @@
+name: Build Ghost theme and create release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build theme
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Update version
+        run: |
+          echo "`jq '.version="1.0.${{ github.run_number }}"' package.json`" > package.json
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '18'
+
+      - name: Build
+        run: |
+          yarn install --frozen-lockfile
+          yarn test
+          yarn zip
+
+      - name: Create release
+        uses: ncipollo/release-action@v1.13.0
+        with:
+          artifacts: "dist/rise.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag: "v1.0.${{ github.run_number }}"
+
+      - name: Clean-up releases
+        uses: dev-drprasad/delete-older-releases@v0.3.2
+        with:
+          keep_latest: 2
+          delete_tags: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
