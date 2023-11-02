@@ -27,6 +27,6 @@ The `zip` Gulp task packages the theme files into `dist/dawn.zip`, which you can
 yarn zip
 ```
 
-# Copyright & License
+# License
 
 Released under the [MIT license](LICENSE).
