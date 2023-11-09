@@ -9,7 +9,7 @@
     color: var(--black-color);
 }
 
-.gh-content time { color: var(--gray); }
+.gh-content time { font-size:1.7rem; font-weight:100; color: var(--gray); text-transform:none; }
 
 figure img { 
     border-radius: var(--radius);

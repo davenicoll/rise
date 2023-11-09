@@ -36,15 +36,14 @@
         {{content}}
 
         {{#is "post"}}
-        <div>
+        <div class="single-meta">
             <span class="single-meta-item single-meta-date">
                 <time datetime="{{date format="YYYY-MM-DD"}}">
                     {{date published_at format="MMMM D, YYYY"}}
                 </time>
             </span>
         </div>
-        {{/is}}
-
+        {{/is}}        
     </div>
 
     {{#is "post"}}
