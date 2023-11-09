@@ -8,7 +8,7 @@
 }
 
 .feed:hover .feed-title {
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .feed:hover .feed-right {
@@ -20,7 +20,7 @@
 }
 
 .feed + .feed {
-    border-top: 1px solid var(--light-gray-color);
+    /* border-top: 1px solid var(--dark-sunrise-yellow); */
 }
 
 .feed + .feed.feed-paged {
@@ -34,7 +34,7 @@
     margin-right: 1.5rem;
     font-size: 1.1rem;
     font-weight: 800;
-    color: var(--brand-color);
+    color: var(--gray);
     white-space: nowrap;
 }
 
@@ -75,7 +75,7 @@
 
 .feed-length {
     font-size: 1.4rem;
-    color: var(--secondary-text-color);
+    color: var(--gray);
     white-space: nowrap;
 }
 
@@ -84,7 +84,7 @@
     right: 0;
     width: 16px;
     height: 16px;
-    color: var(--secondary-text-color);
+    color: var(--gray);
     transition: transform 0.2s var(--animation-base);
     transform: translateX(2rem);
 }

@@ -3,10 +3,13 @@
 @import "general/basics.css";
 @import "general/button.css";
 @import "general/form.css";
+@import "general/table.css";
 @import "general/icons.css";
 @import "site/layout.css";
 @import "site/header.css";
 @import "site/cover.css";
+@import "site/footer.css";
+@import "site/content.css";
 @import "blog/feed.css";
 @import "blog/featured.css";
 @import "blog/pagination.css";

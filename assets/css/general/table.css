@@ -1,0 +1,19 @@
+.gh-content table {
+    display: table;
+    background:unset !important;
+  }
+
+.gh-content table th, 
+.gh-content table td,
+.gh-content table thead,
+.gh-content table tbody {
+    border:unset !important;
+    background:unset !important;
+    background-image:unset !important;
+    text-transform:unset !important;
+}
+
+/*.gh-content table th { background:none !important; }*/
+
+.gh-content table td { border-top: 1px solid var(--gray-line) !important; }
+.gh-content table th { font-size: 1.6rem !important; }

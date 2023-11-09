@@ -87,14 +87,9 @@
 
     <footer class="gh-foot{{#unless @site.secondary_navigation}} no-menu{{/unless}} gh-outer">
         <div class="gh-foot-inner gh-inner">
-            <div class="gh-copyright">
-                {{@site.title}} © {{date format="YYYY"}}
+            <div class="foot-statement">
+                🄯 {{@site.title}}, {{date format="YYYY"}}. No cookie consent. No adverts. No paywalls. <em>Long live the web!</em>
             </div>
-            {{#if @site.secondary_navigation}}
-                <nav class="gh-foot-menu">
-                    {{navigation type="secondary"}}
-                </nav>
-            {{/if}}
             {{#if @custom.show_powered_by_ghost}}
             <div class="gh-powered-by">
                 <a href="https://ghost.org/" target="_blank" rel="noopener">Powered by Ghost</a>

@@ -22,6 +22,16 @@
     --navbar-height: 80px;
     --content-font-size: 1.7rem;
     --header-spacing: 60px;
+
+    --sunrise-yellow: #FDDB29;
+    --dark-sunrise-yellow: #caaf21;
+    --gray: rgba(0, 0, 0, 0.4);
+    --gray-line: rgba(0, 0, 0, 0.2);
+
+    --gap: 14px;
+    --font-small: 14px;
+    --border: 1.5px;
+    --radius: 4px;    
 }
 
 @media (max-width: 767px) {
@@ -32,11 +42,17 @@
 
 body {
     color: var(--primary-text-color);
-    background-color: var(--white-color);
+    background-color: var(--sunrise-yellow);
 }
 
 a {
     color: var(--darker-gray-color);
+    text-decoration: none;
+    border-bottom: var(--border) solid var(--gray-line);    
+}
+a:hover {
+    border-bottom: var(--border) solid var(--black-color);
+    color: var(--black-color);
 }
 
 h1,

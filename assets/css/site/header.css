@@ -8,3 +8,8 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+.gh-head {
+    background-color: var(--sunrise-yellow);
+}
+
+.gh-head .nav { margin-left:auto; }

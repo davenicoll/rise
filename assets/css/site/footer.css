@@ -1,0 +1,16 @@
+.foot-statement {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.gh-foot {
+    color: var(--gray);
+}
+
+.gh-foot-inner {
+    display:flex
+}
